@@ -52,7 +52,7 @@ main{
     font-weight: 700;
     color: $DesaturatedBlue;
 
-    &:hover{
+    &:hover, &:active{
         color: $DarkBlue;
     }
 }
@@ -99,7 +99,7 @@ main{
     text-decoration: underline;
     font-weight: 700;
 
-    &:hover{
+    &:hover,&:active{
         color: #766cf1;
         text-decoration: none;
     }
@@ -115,7 +115,7 @@ button{
     margin: 26px 0;
     box-shadow: 0 13px 15px 0px rgba(30,30,250,0.2);
 
-    &:hover{
+    &:hover, &:active{
         background: #766cf1;
     }
 }

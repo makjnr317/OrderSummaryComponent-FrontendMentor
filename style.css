@@ -47,7 +47,7 @@ main {
   color: #7280a7;
 }
 
-.cancel:hover {
+.cancel:hover, .cancel:active {
   color: #1f2f56;
 }
 
@@ -94,7 +94,7 @@ main {
   font-weight: 700;
 }
 
-.change:hover {
+.change:hover, .change:active {
   color: #766cf1;
   text-decoration: none;
 }
@@ -110,7 +110,7 @@ button {
   box-shadow: 0 13px 15px 0px rgba(30, 30, 250, 0.2);
 }
 
-button:hover {
+button:hover, button:active {
   background: #766cf1;
 }
 
