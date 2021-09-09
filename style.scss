@@ -32,7 +32,7 @@ main{
     flex-direction: column;
     background: white;
     border-radius: 20px;
-    box-shadow: 0 13px 15px 0px rgba(30,30,250,0.15);
+    box-shadow: 0 16px 20px 0px rgba(50, 50, 250, 0.12);
 }
 
 .heading{
@@ -44,11 +44,17 @@ main{
 .title{
     padding: 15px 0;
     color: $DesaturatedBlue;
+    text-align: center;
 }
 
 .cancel{
     font-size: 0.85rem;
-    color: $DarkBlue;
+    font-weight: 700;
+    color: $DesaturatedBlue;
+
+    &:hover{
+        color: $DarkBlue;
+    }
 }
 
 .hero{
@@ -63,10 +69,6 @@ main{
     padding: 25px 45px 35px 45px;
 }
 
-.title{
-    text-align: center;
-}
-
 .pricing{
     display: flex;
     justify-content: space-between;
@@ -75,10 +77,13 @@ main{
     max-width: 350px;
     background: $VeryPaleBlue;
     padding: 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .price{
+    position: relative;
+    left: -16px;
+
     >p:nth-child(1){
         font-weight: 700;
     }
@@ -93,6 +98,11 @@ main{
     color: $BrightBlue;
     text-decoration: underline;
     font-weight: 700;
+
+    &:hover{
+        color: #766cf1;
+        text-decoration: none;
+    }
 }
 
 button{
@@ -104,9 +114,82 @@ button{
     border-radius: 10px;
     margin: 26px 0;
     box-shadow: 0 13px 15px 0px rgba(30,30,250,0.2);
+
+    &:hover{
+        background: #766cf1;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { font-size: 14px;  color: hsl(228, 45%, 44%); }
 
+@media (min-width:1380px) {
+    main{
+        max-width: 450px;
+    }
+
+    .details {
+        padding: 50px 45px 45px 45px;
+    }
+
+    .title {
+        padding: 25px 0;
+    }
+
+    button {
+        margin: 25px 0 35px 0;
+    }
+
+    .price{
+        left: -40px;
+    }
+}
     
+
+@media (max-width:450px) {
+    main{
+        max-width: 325px;
+    }
+    
+    .details {
+        padding: 38px 25px 28px 25px;
+    }
+
+    button{
+        margin: 25px 0;
+    }
+
+    .price{
+        left: -10px;
+    }
+
+    .attribution a { font-size: 12px;  color: hsl(228, 45%, 44%); }
+}
+
+@media (max-width:355px) {
+    body{
+        background: url("./images/pattern-background-mobile.svg") no-repeat;
+        background-color: $PaleBlue;
+    }
+    main{
+        max-width: 300px;
+    }
+    
+    .details {
+        padding: 25px 20px 25px 20px;
+    }
+
+    .pricing{
+        padding: 15px 14px;
+    }
+
+    .price{
+        left: -5px;
+    }
+
+    button{
+        margin: 22px 0;
+        box-shadow: 0 12px 15px 0px rgba(30, 30, 250, 0.15);
+    }
+}
+
